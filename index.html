@@ -8246,39 +8246,7 @@ ctx.font = "16px Arial";
 
       <p>Get save</p>
     <input id="get-save" spellcheck="false" autocorrect="off" type="text" autocomplete="off" placeholder="Your save code....">
-    <!-- </div>
-    
-    
-        <div id="popup">
-      <p>Do you wish to open in fullscreen (recommended)</p>
 
-      <p id="no" onClick="document.getElementById('popup').remove();">No</p>
-      <p id="yes">Yes</p>
-    </div> -->
-    
-    <!--fullscreen function-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type>
-      //get the fullscreen button
-      var fullscreen_button = document.getElementById("yes");
-
-      //if the fullscreen button is clicked open in fullscreen
-      fullscreen_button.addEventListener("click", () => {
-        document.getElementById("popup").remove();
-        const Window = window.open();
-        Window.document.open();
-
-        Window.document.write(
-          `
-        <!doctype html>
-            <html>` +
-            $("html").html() +
-            `</html>        
-            `
-        );
-      });
-    </script>
-    
     
     <!--save code stuff-->
         <script type>
