@@ -1,0 +1,178 @@
+      #save-popup {
+        z-index: 999999;
+        width: 70%;
+        height: 70%;
+        position: fixed;
+        top: 15%;
+        left: 15%;
+        backdrop-filter: blur(10px);
+        padding: 2%;
+        font-size: 200%;
+        color: black;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        cursor: auto;
+                animation: fadeIn 1s 1;
+                display: none;
+
+      }
+      
+      input{
+          background: black;
+          border: none;
+          padding: 1%;
+          width: 40vw;
+        border-radius: 5px;
+        font-size: 55%;
+        height: 4vh;
+        color:white;
+        
+
+      }
+
+
+      #close {
+        position: absolute;
+        top: 1vw;
+        right: 1vw;
+        color: rgba(0, 0, 0, 1);
+        font-size: 110%;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+
+      #close:hover {
+        font-size: 125%;
+      }
+      
+      button {
+          background:black;
+          color:white;
+          width: 10vw;
+          height: 5vh;
+          border: none;
+        border-radius: 5px;
+        font-size: 55%;
+
+      }
+      button:hover {
+          background:rgb(54, 54, 54);
+      }
+
+
+
+      #popup {
+        z-index: 999999;
+        width: 70%;
+        height: 70%;
+        position: fixed;
+        top: 15%;
+        left: 15%;
+        backdrop-filter: blur(10px);
+        padding: 2%;
+        font-size: 200%;
+        color: white;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        cursor: auto;
+                animation: fadeUp 1s 1;
+
+      }
+      #no {
+        position: absolute;
+        left: 25px;
+        bottom: -6%;
+        color: rgba(252, 148, 166, 1);
+        font-size: 110%;
+        cursor: pointer;
+      }
+      #yes {
+        position: absolute;
+        right: 25px;
+        bottom: -6%;
+        color: rgba(147, 250, 173, 1);
+        font-size: 110%;
+        cursor: pointer;
+      }
+
+      #no:hover {
+        font-size: 115%;
+      }
+      #yes:hover {
+        font-size: 115%;
+      }
+
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0%;
+                    top: -100%;
+                }
+                to {
+                    opacity: 100%;
+                    top: 15%;
+                }
+            }
+            
+            @keyframes fadeUp {
+                from {
+                    opacity: 0%;
+                    top: 100%;
+                }
+                to {
+                    opacity: 100%;
+                    top: 15%;
+                }
+            }
+        #music-button {
+            /* Music Button Styles */
+            color: white;
+            background: black;
+            position: fixed;
+            font-size: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            bottom: 5px;
+            right: 5px;
+            z-index: 100;
+        }
+
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: rgb(0, 0, 0);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: "Audiowide", sans-serif;
+        text-align: center;
+        cursor: crosshair;
+      }
+      * {
+        transition: all 0.5s;
+      }
+
+      canvas {
+        /*position:fixed;*/
+        /*top:0px;*/
+        /*left: 0px;*/
+
+        z-index: 10;
+      }
+
+      #canvas {
+        /*width: min(100vw, 100vh);*/
+        /*height: min(100vh, 100vw);*/
+      }
+
+      #canvas2 {
+        /*background: black;*/
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 600;
+        height: 600;
+
+        z-index: 0;
+      }
